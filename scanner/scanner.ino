@@ -23,9 +23,11 @@ uint8_t temprature_sens_read();
 #endif
 
 //For uBeac and WiFi
-const char* url = "http://smarok123.hub.ubeac.io/mygateway";
-const char* ssid = "Momentaj-2";
-const char* password =  "9123100292";
+
+//Change accordingly
+const char* url = "http://***.hub.ubeac.io/mygateway";
+const char* ssid = "acb123";
+const char* password =  "12345678";
 
 //For Bluetooth
 int scanTime = 5; //In seconds
