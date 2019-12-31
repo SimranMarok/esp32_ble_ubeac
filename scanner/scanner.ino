@@ -37,7 +37,7 @@ void setup() {
   Serial.begin(115200);
 
   ble_setup();
-  //wifi_setup();
+  wifi_setup();
 }
 
 void loop() {
@@ -46,8 +46,8 @@ void loop() {
 
   // Convert raw temperature in F to Celsius degrees
   float value = (temprature_sens_read() - 32) / 1.8;
-  //String my_str = "Temperature: ";
+  String my_str = "Temperature: ";
   
-  //send_data(value, my_str);
+  send_data(value, my_str);
   delay(1000);
 }
